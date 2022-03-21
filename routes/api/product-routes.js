@@ -48,11 +48,11 @@ router.get('/:id', (req, res) => {
         model: Category,
         attributes: ['category_name'],
 
-        include: {
+        
 
         model: Tag,
         attributes: ['tag_name']
-        }
+        
       }
     ]
   })
